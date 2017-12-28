@@ -2,7 +2,6 @@ package com.crystal.library.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 
 /**
@@ -18,11 +17,6 @@ public abstract class BaseActivity extends Activity {
         initVariables();
         initViews(savedInstanceState);
         loadData();
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
     }
 
     protected abstract void initVariables();
